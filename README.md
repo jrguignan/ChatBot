@@ -1,7 +1,7 @@
 # Proyecto_ChatBot
 
 <p align="center">
-<img src="images/banner.png"  height=450>
+<img src="images/banner.jpeg"  height=450>
 </p>
 
 # Índice
