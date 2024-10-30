@@ -6,11 +6,20 @@
 
 # Índice
 
-* [](#) 
+* [Página Local](#Página-Local) 
 
-* [](#) 
+* [Construcción del ChatBot](#Construcción-del-ChatBot) 
+
+* [Deploy en Render](#Deploy-en-Render) 
 
 * [Autor](#Autor)
+
+
+# Página Local
+
+# Construcción del ChatBot
+
+# Deploy en Render
 
 
 
