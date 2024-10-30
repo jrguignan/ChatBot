@@ -1,4 +1,4 @@
-# ChatBot -> Flask - OpenIA - Render
+# ChatBot -> Flask - OpenAI - Render
 
 <p align="center">
 <img src="images/banner.jpeg"  height=400>
@@ -6,10 +6,10 @@
 
 # Índice
 
-[Página en Local](#Página-en-Local) 
-[Construcción del ChatBot](#Construcción-del-ChatBot) 
-[Deploy en Render](#Deploy-en-Render) 
-[Autor](#Autor)
+* [Página en Local](#Página-en-Local) 
+* [Construcción del ChatBot](#Construcción-del-ChatBot) 
+* [Deploy en Render](#Deploy-en-Render) 
+* [Autor](#Autor)
 
 
 # Página en Local
