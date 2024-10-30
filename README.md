@@ -1,25 +1,27 @@
-# Proyecto_ChatBot
+# ChatBot -> Flask - OpenIA - Render
 
 <p align="center">
-<img src="images/banner.jpeg"  height=450>
+<img src="images/banner.jpeg"  height=400>
 </p>
 
 # Índice
 
-* [Página Local](#Página-Local) 
-
+* [Página en Local](#Página-en-Local) 
 * [Construcción del ChatBot](#Construcción-del-ChatBot) 
-
 * [Deploy en Render](#Deploy-en-Render) 
-
 * [Autor](#Autor)
 
 
-# Página Local
+# Página en Local
+
+
 
 # Construcción del ChatBot
 
+
+
 # Deploy en Render
+
 
 
 
