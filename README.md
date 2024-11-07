@@ -24,10 +24,18 @@ Se utilizó la librería Flask, para la construcción de la página web del chat
 **Recursos Estáticos**:
    - Carpeta `static/images`: Dentro de la carpeta `static` se creó una subcarpeta `images` para almacenar la imagen utilizada en la interfaz del chatbot (como un logo o avatar). Flask sirve automáticamente estos archivos cuando se refieren en el HTML, facilitando la organización de recursos estáticos.
 
+## Cómo Ejecutar la Aplicación Localmente
 
 ```python
 #Para correr en local la página en Flask
 
+#Clona este repositorio en tu equipo:
+git clone https://github.com/jrguignan/ChatBot.git
+
+#Entrar dentro del directorio
+cd ChatBot
+
+#Ejecución de la pagina en local
 python app.py
 
 #Luego se puede ven un navegador en esta dirección: http://127.0.0.1:5000
