@@ -35,10 +35,10 @@ git clone https://github.com/jrguignan/ChatBot.git
 #Entrar dentro del directorio
 cd ChatBot
 
-#Ejecución de la pagina en local
+#Ejecutar app.py para ver la página en local
 python app.py
 
-#Luego se puede ven un navegador en esta dirección: http://127.0.0.1:5000
+#Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
 ```
 
 
