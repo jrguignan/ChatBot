@@ -55,7 +55,9 @@ python app.py
 # Requisitos
 
 - Python==3.11.5: Necesario para ejecutar Flask y las dependencias de la API.
+
 - Flask==3.0.3: Framework web para Python.
+
 - openai==1.52.2 - API Key de OpenAI: Asegúrate de configurar tu clave de la API en las variables de entorno para que el chatbot pueda comunicarse con el modelo de lenguaje de OpenAI.
 
 
