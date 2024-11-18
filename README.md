@@ -41,9 +41,6 @@ python app.py
 #Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
 ```
 
-
-
-
 # Construcción del ChatBot
 
 Para la construcción del chatbot, se utilizó **ChatGPT**, un modelo de lenguaje avanzado proporcionado por OpenAI. La comunicación con ChatGPT se realiza mediante la **API de OpenAI**, que permite integrar funcionalidades de conversación basadas en IA en aplicaciones externas, como este chatbot web.
@@ -85,8 +82,6 @@ Este flujo de construcción permite que el chatbot funcione de manera eficaz y s
 - Flask==3.0.3: Framework web para Python.
 
 - openai==1.52.2 - API Key de OpenAI: Asegúrate de configurar tu clave de la API en las variables de entorno para que el chatbot pueda comunicarse con el modelo de lenguaje de OpenAI.
-
-
 
 <br>[Volver al Índice](#Índice)
 
