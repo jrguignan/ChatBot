@@ -1,0 +1,4 @@
+Flask==3.0.3
+openai==1.52.2
+uvicorn==0.25.0
+
