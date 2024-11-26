@@ -31,7 +31,13 @@ def home():
         session['conversation'].append({"role": "assistant", "content": respuesta})
         session.modified = True  # Asegurar que la sesión se actualiza
     
-    return render_template('index.html', conversation=session['conversation'])
+    # Convertir el rol a "Usuario" y "Respuesta" para la visualización
+    conversation_display = [
+        {"role": "Usuario" if msg["role"] == "user" else "Respuesta", "content": msg["content"]}
+        for msg in session['conversation']
+    ]
+    
+    return render_template('index.html', conversation=conversation_display)
 
 def chatgpt_response(texto):
     try:
