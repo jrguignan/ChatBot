@@ -6,14 +6,16 @@
 
 # Índice
 
-* [Página en Local](#Página-en-Local) 
 * [Construcción del ChatBot](#Construcción-del-ChatBot) 
+* [Página en Local](#Página-en-Local) 
 * [Deploy en Render](#Deploy-en-Render) 
 * [Requisitos](#Requisitos) 
 * [Autor](#Autor)
 
 
-# Página en Local
+
+
+
 
 Se utilizó la librería Flask, para la construcción de la página web del chatbot.
 
@@ -23,23 +25,6 @@ Se utilizó la librería Flask, para la construcción de la página web del chat
 
 **Recursos Estáticos**:
    - Carpeta `static/images`: Dentro de la carpeta `static` se creó una subcarpeta `images` para almacenar la imagen utilizada en la interfaz del chatbot (como un logo o avatar). Flask sirve automáticamente estos archivos cuando se refieren en el HTML, facilitando la organización de recursos estáticos.
-
-## Cómo Ejecutar la Aplicación Localmente
-
-```python
-#Para correr en local la página en Flask
-
-#Clona este repositorio en tu equipo:
-git clone https://github.com/jrguignan/ChatBot.git
-
-#Entrar dentro del directorio
-cd ChatBot
-
-#Ejecutar app.py para ver la página en local
-python app.py
-
-#Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
-```
 
 # Construcción del ChatBot
 
@@ -70,6 +55,22 @@ Este flujo de construcción permite que el chatbot funcione de manera eficaz y s
 
 ---
 
+# Página en Local
+
+```python
+#Para correr en local la página en Flask
+
+#Clona este repositorio en tu equipo:
+git clone https://github.com/jrguignan/ChatBot.git
+
+#Entrar dentro del directorio
+cd ChatBot
+
+#Ejecutar app.py para ver la página en local
+python app.py
+
+#Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
+```
 
 # Deploy en Render
 
@@ -82,11 +83,21 @@ Environment Variables
 
 # Requisitos
 
-- Python==3.11.5: Necesario para ejecutar Flask y las dependencias de la API.
+Se encuentra en el archivo [requirements.txt](https://github.com/jrguignan/ChatBot/blob/main/requirements.txt)
 
-- Flask==3.0.3: Framework web para Python.
+Estos son las librerías principales:
 
-- openai==1.52.2 - API Key de OpenAI: Asegúrate de configurar tu clave de la API en las variables de entorno para que el chatbot pueda comunicarse con el modelo de lenguaje de OpenAI.
+- Python==3.11.5: Necesario para ejecutar Flask y las dependencias de la API. Proporciona la base del entorno de ejecución.
+
+- Flask==3.0.3: Framework web ligero y fácil de usar para Python, que permite desarrollar aplicaciones web rápidamente y con flexibilidad.
+
+- openai==1.52.2: Biblioteca para interactuar con la API de OpenAI. Asegúrate de configurar tu clave de API en las variables de entorno para que el chatbot pueda comunicarse con el modelo de lenguaje de OpenAI.
+
+- Jinja2==3.1.4: Motor de plantillas para Python que permite a los desarrolladores generar HTML dinámico con simplicidad y elegancia.
+
+- jiter==0.8.0: Biblioteca para ejecutar pruebas y automatizaciones en diversas aplicaciones, permitiendo una mayor eficiencia en el desarrollo y despliegue.
+
+- gunicorn==23.0.0: Servidor WSGI para aplicaciones web Python, diseñado para manejar múltiples solicitudes de manera eficiente y con alto rendimiento. Ideal para el despliegue de aplicaciones en producción.
 
 <br>[Volver al Índice](#Índice)
 
