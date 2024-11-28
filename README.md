@@ -73,6 +73,10 @@ Este flujo de construcción permite que el chatbot funcione de manera eficaz y s
 
 # Deploy en Render
 
+pip install -r requirements.txt
+gunicorn --bind 0.0.0.0:5000 app:app
+Environment Variables
+
 [Link Render](https://chatbot-zz60.onrender.com/)
 
 
