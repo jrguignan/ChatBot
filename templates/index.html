@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatBot</title>
     <style>
+        /* Estilo para el cuerpo de la página */
         body {
             background-color: #121212; /* Fondo oscuro */
             color: #E0E0E0; /* Texto claro */
@@ -12,25 +13,30 @@
             margin: 0;
             padding: 20px;
         }
+        /* Estilo para títulos */
         h1, h2 {
             color: #FFFFFF;
             text-align: center; /* Centrar el título */
         }
+        /* Estilo para las imágenes */
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
         }
+        /* Estilo para los formularios */
         form {
             background-color: #1E1E1E;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
         }
+        /* Estilo para etiquetas y botones */
         label, button {
             color: #FFFFFF;
         }
+        /* Estilo para el área de texto */
         textarea {
             width: 100%;
             border: 1px solid #333;
@@ -39,6 +45,7 @@
             color: #E0E0E0;
             border-radius: 5px;
         }
+        /* Estilo para los botones */
         button {
             background-color: #6200EA;
             border: none;
@@ -51,6 +58,7 @@
         button:hover {
             background-color: #3700B3;
         }
+        /* Estilo para la conversación */
         .conversation {
             border: 1px solid #333;
             padding: 10px;
@@ -58,36 +66,39 @@
             margin-top: 20px;
             border-radius: 10px;
         }
+        /* Estilo para los párrafos dentro de la conversación */
         .conversation p {
             margin: 5px 0;
         }
+        /* Estilo para los textos en negrita dentro de la conversación */
         .conversation strong {
             color: #BB86FC;
         }
     </style>
 </head>
 <body>
-    <h1>ChatBot</h1>
-    <img src="static/images/chatbot.png" alt="Logo" style="width: 25%;">
-    <form method="POST" action="/">
-        <label for="textarea">Escribe algo para enviar a ChatGPT:</label>
+    <h1>ChatBot</h1> <!-- Título principal -->
+    <img src="static/images/chatbot.png" alt="Logo" style="width: 25%;"> <!-- Imagen del logo centrada -->
+    <form method="POST" action="/"> <!-- Formulario para enviar datos a ChatGPT -->
+        <label for="textarea">Escribe algo para enviar a ChatGPT:</label> <!-- Etiqueta para el área de texto -->
         <br>
-        <textarea id="textarea" name="textarea" rows="5" cols="30"></textarea>
+        <textarea id="textarea" name="textarea" rows="5" cols="30"></textarea> <!-- Área de texto para la entrada del usuario -->
         <br>
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
     </form>
 
-    {% if conversation %}
-    <h2>Historial de conversación:</h2>
-    <div class="conversation">
-        {% for message in conversation %}
-            <p><strong>{{ message.role }}:</strong> {{ message.content }}</p>
+    {% if conversation %} <!-- Bloque condicional para mostrar el historial de conversación si existe -->
+    <h2>Historial de conversación:</h2> <!-- Subtítulo para la sección de historial -->
+    <div class="conversation"> <!-- Contenedor para los mensajes de la conversación -->
+        {% for message in conversation %} <!-- Bucle para iterar sobre los mensajes de la conversación -->
+            <p><strong>{{ message.role }}:</strong> {{ message.content }}</p> <!-- Muestra cada mensaje con su respectivo rol en negrita -->
         {% endfor %}
     </div>
     {% endif %}
 
-    <form method="POST" action="/reset">
-        <button type="submit">Reiniciar Conversación</button>
+    <form method="POST" action="/reset"> <!-- Formulario para reiniciar la conversación -->
+        <button type="submit">Reiniciar Conversación</button> <!-- Botón para enviar el formulario de reinicio -->
     </form>
+    <p>Nota: La página puede no conectar con ChatGPT porque se acabaron o vencieron los créditos de la API.</p> <!-- Nota informativa al final de la página -->
 </body>
 </html>
