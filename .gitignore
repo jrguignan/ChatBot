@@ -1,2 +1,5 @@
 # Ignorar el archivo que contiene las credenciales de la api
 .env
+
+# Ignora el entorno Virtual
+venv/
