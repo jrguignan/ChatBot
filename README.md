@@ -73,7 +73,7 @@ python app.py
 #Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
 ```
 <p align="center">
-<img src="images/chat_local.png"  height=700>
+<img src="images/chat_local.png"  height=300>
 </p>
 
 # Deploy en Render
@@ -89,7 +89,7 @@ Environment Variables -> Se cargó en render el archivo .env
 [Link ChatBot en Render](https://chatbot-zz60.onrender.com/)
 
 <p align="center">
-<img src="images/chat_render.png"  height=600>
+<img src="images/chat_render.png"  height=400>
 </p>
 
 # Requisitos
