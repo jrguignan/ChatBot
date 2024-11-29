@@ -32,7 +32,7 @@ pip install Flask               # y todas las dependencias necesarias
 pip freeze > requirements.txt   # Guarda en un txt las librerías requeridas
 deactivate                      # Desactiva el entorno virtual
 ```
-   - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura. Para esto se creo un archivo .env con las credenciales de OpenAI.
+   - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura. Para esto se creó un archivo .env con las credenciales de OpenAI.
 
 
 ## Integración con la API de OpenAI:
@@ -54,6 +54,8 @@ Este flujo de construcción permite que el chatbot funcione de manera eficaz y s
 
 ---
 
+<br>[Volver al Índice](#Índice)
+
 # Página en Local
 
 ```python
@@ -70,6 +72,9 @@ python app.py
 
 #Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
 ```
+<p align="center">
+<img src="images/chat_local.png"  height=700>
+</p>
 
 # Deploy en Render
 
@@ -83,6 +88,9 @@ Environment Variables -> Se cargó en render el archivo .env
 
 [Link ChatBot en Render](https://chatbot-zz60.onrender.com/)
 
+<p align="center">
+<img src="images/chat_render.png"  height=600>
+</p>
 
 # Requisitos
 
