@@ -44,7 +44,7 @@ pip install Flask               # y todas las dependencias necesarias
 pip freeze > requirements.txt   # Guarda en un txt las librerías requeridas
 deactivate                      # Desactiva el entorno virtual
 ```
-   - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura.
+   - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura. Para esto se creo un archivo .env con las credenciales de OpenAI.
 
 
 **Integración con la API de OpenAI**:
@@ -85,11 +85,15 @@ python app.py
 
 # Deploy en Render
 
-pip install -r requirements.txt
-gunicorn --bind 0.0.0.0:5000 app:app
-Environment Variables
+Se siguieron los pasos sugeridos por render en la creacion de un sitio web, sólo se tomaron en cuentas las siguentes pautas para hacer el deploy:
 
-[Link Render](https://chatbot-zz60.onrender.com/)
+pip install -r requirements.txt
+
+gunicorn --bind 0.0.0.0:5000 app:app
+
+Environment Variables -> Se cargó en render el archivo .env
+
+[Link ChatBot en Render](https://chatbot-zz60.onrender.com/)
 
 
 # Requisitos
