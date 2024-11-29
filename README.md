@@ -28,13 +28,24 @@ Se utilizó la librería Flask, para la construcción de la página web del chat
 
 # Construcción del ChatBot
 
-Para la construcción del chatbot, se utilizó **ChatGPT**, un modelo de lenguaje avanzado proporcionado por OpenAI. La comunicación con ChatGPT se realiza mediante la **API de OpenAI**, que permite integrar funcionalidades de conversación basadas en IA en aplicaciones externas, como este chatbot web.
+Para la construcción del chatbot, se utilizó **GPT-3.5-Turbo**, un modelo de lenguaje avanzado proporcionado por OpenAI. La comunicación con ChatGPT se realiza mediante la **API de OpenAI**, que permite integrar funcionalidades de conversación basadas en IA en aplicaciones externas, como este chatbot web.
 
 El flujo general de la construcción del chatbot es el siguiente:
 
 **Configuración del Entorno de Desarrollo**:
    - Se creó un entorno virtual de Python para instalar las dependencias necesarias, como Flask (framework de desarrollo web) y la biblioteca de OpenAI para interactuar con su API.
+```python
+#Pasos para la creación del entorno virtual
+#Correr cmd dentro de la carpeta del proyecto
+
+python -m venv venv             # Crea el entorno virtual
+venv\Scripts\activate           # Activa el entorno virtual
+pip install Flask               # y todas las dependencias necesarias
+pip freeze > requirements.txt   # Guarda en un txt las librerías requeridas
+deactivate                      # Desactiva el entorno virtual
+```
    - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura.
+
 
 **Integración con la API de OpenAI**:
    - A través de la biblioteca `openai` para Python, el chatbot envía mensajes del usuario a la API de OpenAI y recibe las respuestas generadas por ChatGPT.
@@ -103,7 +114,7 @@ Estos son las librerías principales:
 
 # Autor
 
-- José R. Guignan
+José R. Guignan
 - Mail: joserguignan@gmail.com
 - Linkedin: [https://www.linkedin.com/in/jrguignan/](https://www.linkedin.com/in/jrguignan)
 - Portafolio: [https://jrguignan.github.io/](https://jrguignan.github.io/)
