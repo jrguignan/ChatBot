@@ -28,11 +28,11 @@ El flujo general de la construcción del chatbot es el siguiente:
 
 python -m venv venv             # Crea el entorno virtual
 venv\Scripts\activate           # Activa el entorno virtual
-pip install Flask               # y todas las dependencias necesarias
+pip install Flask               # Se instalan las librerias necesatias
 pip freeze > requirements.txt   # Guarda en un txt las librerías requeridas
 deactivate                      # Desactiva el entorno virtual
 ```
-   - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura. Para esto se creó un archivo .env con las credenciales de OpenAI.
+   - La API Key de OpenAI se configura como una variable de entorno para asegurar la seguridad y evitar la exposición directa de la clave en el código. Esto permite que Flask pueda acceder a la API de OpenAI de manera segura. Para esto se creó un archivo .env con las credenciales de OpenAI, donde se uso la librería dotenv.
 
 
 ## Integración con la API de OpenAI:
@@ -76,13 +76,15 @@ python app.py
 <img src="images/chat_local_.png"  height=400>
 </p>
 
+<br>[Volver al Índice](#Índice)
+
 # Deploy en Render
 
 Se siguieron los pasos sugeridos por render en la creacion de un sitio web, sólo se tomaron en cuentas las siguentes pautas para hacer el deploy:
 
-pip install -r requirements.txt
+pip install -r requirements.txt -> Para cargar las librerías adecuadas
 
-gunicorn --bind 0.0.0.0:5000 app:app
+gunicorn --bind 0.0.0.0:5000 app:app -> Para desplegar la aplicación web
 
 Environment Variables -> Se cargó en render el archivo .env
 
@@ -94,7 +96,7 @@ Environment Variables -> Se cargó en render el archivo .env
 
 # Requisitos
 
-Se encuentra en el archivo [requirements.txt](https://github.com/jrguignan/ChatBot/blob/main/requirements.txt)
+Se encuentran en el archivo [requirements.txt](https://github.com/jrguignan/ChatBot/blob/main/requirements.txt)
 
 Estos son las librerías principales:
 
