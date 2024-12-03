@@ -71,6 +71,9 @@ cd ChatBot
 python app.py
 
 #Luego se puede ver un navegador en esta dirección: http://127.0.0.1:5000
+
+#Para que funcione correctamente la conexión a OpenAI debes colocar una credencial
+#válida en un archivo .env
 ```
 <p align="center">
 <img src="images/chat_local_.png"  height=400>
